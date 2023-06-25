@@ -21,6 +21,8 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 COPY docker-entrypoint /usr/local/bin/docker-entrypoint
 
-ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
+COPY entrypoint.sh /entrypoint.sh
 
-CMD ["composer"]
+ENTRYPOINT ["/entrypoint.sh"]
+
+CMD ["help"]
