@@ -1,0 +1,6 @@
+name: 'Setup PHP Action'
+author: J-Monroy
+description: 'Action enviroment PHP with composer'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
