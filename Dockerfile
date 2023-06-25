@@ -19,8 +19,6 @@ RUN docker-php-ext-install pdo_mysql
 
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
-COPY docker-entrypoint /usr/local/bin/docker-entrypoint
-
 COPY entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
