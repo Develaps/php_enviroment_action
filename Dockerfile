@@ -22,5 +22,3 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 COPY entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
-
-CMD ["help"]
