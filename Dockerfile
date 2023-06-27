@@ -18,9 +18,11 @@ RUN rm /var/cache/apk/*
 
 # Install php extensions
 
-RUN docker-php-ext-install pdo_mysql gd zip
+
 
 RUN docker-php-ext-configure gd
+
+RUN docker-php-ext-install pdo_mysql gd zip
 
 
 
