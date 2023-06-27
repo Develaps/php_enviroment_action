@@ -2,20 +2,13 @@ FROM php:7.4-fpm-alpine
 
 # Install system dependencies
 
-RUN apk -- update add \
+RUN apk --update add \
     curl \
     libpng-dev \
     libxml2-dev \
     libzip-dev \
-    zip \ 
-    unzip \
-    zlib1g-dev \
-    libjpeg-turbo-dev \
-    libwebp-dev \
-    freetype-dev \
-    gd \ 
-    zlib-dev \
-    zlib
+    zip \
+    unzip
 
 
 
