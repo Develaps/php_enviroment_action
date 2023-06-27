@@ -9,7 +9,11 @@ RUN apk -- update add \
     libzip-dev \
     zip \ 
     unzip \
-    zlib1g-dev 
+    zlib1g-dev \
+    libjpeg-turbo-dev \
+    libwebp-dev \
+    freetype-dev
+
 
 
 
