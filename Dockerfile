@@ -13,7 +13,9 @@ RUN apk -- update add \
     libjpeg-turbo-dev \
     libwebp-dev \
     freetype-dev \
-    gd
+    gd \ 
+    zlib-dev \
+    zlib
 
 
 
