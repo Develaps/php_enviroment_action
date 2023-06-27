@@ -8,7 +8,9 @@ RUN apk -- update add \
     libxml2-dev \
     libzip-dev \
     zip \ 
-    unzip 
+    unzip \
+    zlib1g-dev 
+
 
 
 # Clear cache
