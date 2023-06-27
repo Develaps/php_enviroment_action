@@ -7,7 +7,8 @@ RUN apk -- update add \
     libpng-dev \
     libxml2-dev \
     zip \ 
-    unzip 
+    unzip \
+    ext-gd
 
 # Clear cache
 
