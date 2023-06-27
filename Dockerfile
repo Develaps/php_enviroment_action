@@ -6,12 +6,9 @@ RUN apk -- update add \
     curl \
     libpng-dev \
     libxml2-dev \
+    libzip-dev \
     zip \ 
-    unzip \
-    libjpeg-turbo-dev \
-    libpng-dev \
-    libwebp-dev \
-    freetype-dev
+    unzip 
 
 
 # Clear cache
@@ -20,9 +17,9 @@ RUN rm /var/cache/apk/*
 
 # Install php extensions
 
-RUN docker-php-ext-configure gd --with-jpeg --with-webp --with-freetype
+RUN docker-php-ext-configure gd
 
-RUN docker-php-ext-install pdo_mysql gd
+RUN docker-php-ext-install pdo_mysql gd zip
 
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
